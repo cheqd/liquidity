@@ -24,7 +24,7 @@ ifeq ($(LEDGER_ENABLED),true)
   else
     UNAME_S = $(shell uname -s)
     ifeq ($(UNAME_S),OpenBSD)
-      $(warning OpenBSD detected, disabling ledger support (https://github.com/cosmos/cosmos-sdk/issues/1988))
+      $(warning OpenBSD detected, disabling ledger support (https://github.com/cheqd/cosmos-sdk/issues/1988))
     else
       GCC = $(shell command -v gcc 2> /dev/null)
       ifeq ($(GCC),)
@@ -49,15 +49,15 @@ build_tags_comma_sep := $(subst $(whitespace),$(comma),$(build_tags))
 
 # process linker flags
 
-ldflags = -X github.com/cosmos/cosmos-sdk/version.Name=liquidityd \
-		  -X github.com/cosmos/cosmos-sdk/version.AppName=liquidityd \
-		  -X github.com/cosmos/cosmos-sdk/version.Version=$(VERSION) \
-		  -X github.com/cosmos/cosmos-sdk/version.Commit=$(COMMIT) \
-		  -X "github.com/cosmos/cosmos-sdk/version.BuildTags=$(build_tags_comma_sep)" \
-		  -X github.com/cosmos/cosmos-sdk/types.reDnmString=[a-zA-Z][a-zA-Z0-9/:]{2,127}
+ldflags = -X github.com/cheqd/cosmos-sdk/version.Name=liquidityd \
+		  -X github.com/cheqd/cosmos-sdk/version.AppName=liquidityd \
+		  -X github.com/cheqd/cosmos-sdk/version.Version=$(VERSION) \
+		  -X github.com/cheqd/cosmos-sdk/version.Commit=$(COMMIT) \
+		  -X "github.com/cheqd/cosmos-sdk/version.BuildTags=$(build_tags_comma_sep)" \
+		  -X github.com/cheqd/cosmos-sdk/types.reDnmString=[a-zA-Z][a-zA-Z0-9/:]{2,127}
 
 ifeq ($(WITH_CLEVELDB),yes)
-  ldflags += -X github.com/cosmos/cosmos-sdk/types.DBBackend=cleveldb
+  ldflags += -X github.com/cheqd/cosmos-sdk/types.DBBackend=cleveldb
 endif
 ldflags += $(LDFLAGS)
 ldflags := $(strip $(ldflags))

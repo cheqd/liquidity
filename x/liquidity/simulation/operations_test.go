@@ -5,9 +5,9 @@ import (
 	"strings"
 	"testing"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	minttypes "github.com/cosmos/cosmos-sdk/x/mint/types"
+	sdk "github.com/cheqd/cosmos-sdk/types"
+	simtypes "github.com/cheqd/cosmos-sdk/types/simulation"
+	minttypes "github.com/cheqd/cosmos-sdk/x/mint/types"
 	"github.com/stretchr/testify/require"
 	abci "github.com/tendermint/tendermint/abci/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"

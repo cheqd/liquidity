@@ -6,8 +6,8 @@ import (
 	"math/rand"
 	"strings"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
+	sdk "github.com/cheqd/cosmos-sdk/types"
+	simtypes "github.com/cheqd/cosmos-sdk/types/simulation"
 
 	"github.com/gravity-devs/liquidity/x/liquidity/keeper"
 	"github.com/gravity-devs/liquidity/x/liquidity/types"

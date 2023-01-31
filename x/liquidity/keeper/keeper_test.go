@@ -3,8 +3,8 @@ package keeper_test
 import (
 	"testing"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/cheqd/cosmos-sdk/baseapp"
+	sdk "github.com/cheqd/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 

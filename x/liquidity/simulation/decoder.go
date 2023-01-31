@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/kv"
+	"github.com/cheqd/cosmos-sdk/codec"
+	sdk "github.com/cheqd/cosmos-sdk/types"
+	"github.com/cheqd/cosmos-sdk/types/kv"
 
 	"github.com/gravity-devs/liquidity/x/liquidity/types"
 )

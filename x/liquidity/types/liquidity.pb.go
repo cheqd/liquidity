@@ -5,8 +5,8 @@ package types
 
 import (
 	fmt "fmt"
-	github_com_cosmos_cosmos_sdk_types "github.com/cosmos/cosmos-sdk/types"
-	types "github.com/cosmos/cosmos-sdk/types"
+	github_com_cosmos_cosmos_sdk_types "github.com/cheqd/cosmos-sdk/types"
+	types "github.com/cheqd/cosmos-sdk/types"
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/gogo/protobuf/proto"
 	_ "github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-openapiv2/options"
@@ -80,19 +80,19 @@ type Params struct {
 	// list of available pool types
 	PoolTypes []PoolType `protobuf:"bytes,1,rep,name=pool_types,json=poolTypes,proto3" json:"pool_types" yaml:"pool_types"`
 	// Minimum number of coins to be deposited to the liquidity pool on pool creation.
-	MinInitDepositAmount github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,2,opt,name=min_init_deposit_amount,json=minInitDepositAmount,proto3,customtype=github.com/cosmos/cosmos-sdk/types.Int" json:"min_init_deposit_amount" yaml:"min_init_deposit_amount"`
+	MinInitDepositAmount github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,2,opt,name=min_init_deposit_amount,json=minInitDepositAmount,proto3,customtype=github.com/cheqd/cosmos-sdk/types.Int" json:"min_init_deposit_amount" yaml:"min_init_deposit_amount"`
 	// Initial mint amount of pool coins upon pool creation.
-	InitPoolCoinMintAmount github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,3,opt,name=init_pool_coin_mint_amount,json=initPoolCoinMintAmount,proto3,customtype=github.com/cosmos/cosmos-sdk/types.Int" json:"init_pool_coin_mint_amount" yaml:"init_pool_coin_mint_amount"`
+	InitPoolCoinMintAmount github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,3,opt,name=init_pool_coin_mint_amount,json=initPoolCoinMintAmount,proto3,customtype=github.com/cheqd/cosmos-sdk/types.Int" json:"init_pool_coin_mint_amount" yaml:"init_pool_coin_mint_amount"`
 	// Limit the size of each liquidity pool to minimize risk. In development, set to 0 for no limit. In production, set a limit.
-	MaxReserveCoinAmount github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,4,opt,name=max_reserve_coin_amount,json=maxReserveCoinAmount,proto3,customtype=github.com/cosmos/cosmos-sdk/types.Int" json:"max_reserve_coin_amount" yaml:"max_reserve_coin_amount"`
+	MaxReserveCoinAmount github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,4,opt,name=max_reserve_coin_amount,json=maxReserveCoinAmount,proto3,customtype=github.com/cheqd/cosmos-sdk/types.Int" json:"max_reserve_coin_amount" yaml:"max_reserve_coin_amount"`
 	// Fee paid to create a Liquidity Pool. Set a fee to prevent spamming.
-	PoolCreationFee github_com_cosmos_cosmos_sdk_types.Coins `protobuf:"bytes,5,rep,name=pool_creation_fee,json=poolCreationFee,proto3,castrepeated=github.com/cosmos/cosmos-sdk/types.Coins" json:"pool_creation_fee" yaml:"pool_creation_fee"`
+	PoolCreationFee github_com_cosmos_cosmos_sdk_types.Coins `protobuf:"bytes,5,rep,name=pool_creation_fee,json=poolCreationFee,proto3,castrepeated=github.com/cheqd/cosmos-sdk/types.Coins" json:"pool_creation_fee" yaml:"pool_creation_fee"`
 	// Swap fee rate for every executed swap.
-	SwapFeeRate github_com_cosmos_cosmos_sdk_types.Dec `protobuf:"bytes,6,opt,name=swap_fee_rate,json=swapFeeRate,proto3,customtype=github.com/cosmos/cosmos-sdk/types.Dec" json:"swap_fee_rate" yaml:"swap_fee_rate"`
+	SwapFeeRate github_com_cosmos_cosmos_sdk_types.Dec `protobuf:"bytes,6,opt,name=swap_fee_rate,json=swapFeeRate,proto3,customtype=github.com/cheqd/cosmos-sdk/types.Dec" json:"swap_fee_rate" yaml:"swap_fee_rate"`
 	// Reserve coin withdrawal with less proportion by withdrawFeeRate.
-	WithdrawFeeRate github_com_cosmos_cosmos_sdk_types.Dec `protobuf:"bytes,7,opt,name=withdraw_fee_rate,json=withdrawFeeRate,proto3,customtype=github.com/cosmos/cosmos-sdk/types.Dec" json:"withdraw_fee_rate" yaml:"withdraw_fee_rate"`
+	WithdrawFeeRate github_com_cosmos_cosmos_sdk_types.Dec `protobuf:"bytes,7,opt,name=withdraw_fee_rate,json=withdrawFeeRate,proto3,customtype=github.com/cheqd/cosmos-sdk/types.Dec" json:"withdraw_fee_rate" yaml:"withdraw_fee_rate"`
 	// Maximum ratio of reserve coins that can be ordered at a swap order.
-	MaxOrderAmountRatio github_com_cosmos_cosmos_sdk_types.Dec `protobuf:"bytes,8,opt,name=max_order_amount_ratio,json=maxOrderAmountRatio,proto3,customtype=github.com/cosmos/cosmos-sdk/types.Dec" json:"max_order_amount_ratio" yaml:"max_order_amount_ratio"`
+	MaxOrderAmountRatio github_com_cosmos_cosmos_sdk_types.Dec `protobuf:"bytes,8,opt,name=max_order_amount_ratio,json=maxOrderAmountRatio,proto3,customtype=github.com/cheqd/cosmos-sdk/types.Dec" json:"max_order_amount_ratio" yaml:"max_order_amount_ratio"`
 	// The smallest unit batch height for every liquidity pool.
 	UnitBatchHeight uint32 `protobuf:"varint,9,opt,name=unit_batch_height,json=unitBatchHeight,proto3" json:"unit_batch_height,omitempty" yaml:"unit_batch_height"`
 	// Circuit breaker enables or disables transaction messages in liquidity module.
@@ -185,7 +185,7 @@ type PoolMetadata struct {
 	// pool coin issued at the pool
 	PoolCoinTotalSupply types.Coin `protobuf:"bytes,2,opt,name=pool_coin_total_supply,json=poolCoinTotalSupply,proto3" json:"pool_coin_total_supply" yaml:"pool_coin_total_supply"`
 	// reserve coins deposited in the pool
-	ReserveCoins github_com_cosmos_cosmos_sdk_types.Coins `protobuf:"bytes,3,rep,name=reserve_coins,json=reserveCoins,proto3,castrepeated=github.com/cosmos/cosmos-sdk/types.Coins" json:"reserve_coins" yaml:"reserve_coins"`
+	ReserveCoins github_com_cosmos_cosmos_sdk_types.Coins `protobuf:"bytes,3,rep,name=reserve_coins,json=reserveCoins,proto3,castrepeated=github.com/cheqd/cosmos-sdk/types.Coins" json:"reserve_coins" yaml:"reserve_coins"`
 }
 
 func (m *PoolMetadata) Reset()         { *m = PoolMetadata{} }

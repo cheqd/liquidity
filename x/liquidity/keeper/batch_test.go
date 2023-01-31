@@ -3,9 +3,9 @@ package keeper_test
 import (
 	"testing"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	distrtypes "github.com/cosmos/cosmos-sdk/x/distribution/types"
+	sdk "github.com/cheqd/cosmos-sdk/types"
+	sdkerrors "github.com/cheqd/cosmos-sdk/types/errors"
+	distrtypes "github.com/cheqd/cosmos-sdk/x/distribution/types"
 	"github.com/stretchr/testify/require"
 
 	"github.com/gravity-devs/liquidity/app"

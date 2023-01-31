@@ -60,7 +60,7 @@ message Params {
     // Minimum number of coins to be deposited to the liquidity pool on pool creation.
     string min_init_deposit_amount = 2 [
         (gogoproto.moretags)   = "yaml:\"min_init_deposit_amount\"",
-        (gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int",
+        (gogoproto.customtype) = "github.com/cheqd/cosmos-sdk/types.Int",
         (gogoproto.nullable)   = false,
         (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {
             example: "\"1000000\"",
@@ -70,7 +70,7 @@ message Params {
     // Initial mint amount of pool coins upon pool creation.
     string init_pool_coin_mint_amount = 3 [
         (gogoproto.moretags)   = "yaml:\"init_pool_coin_mint_amount\"",
-        (gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int",
+        (gogoproto.customtype) = "github.com/cheqd/cosmos-sdk/types.Int",
         (gogoproto.nullable)   = false,
         (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {
             example: "\"1000000\"",
@@ -80,7 +80,7 @@ message Params {
     // Limit the size of each liquidity pool to minimize risk. In development, set to 0 for no limit. In production, set a limit.
     string max_reserve_coin_amount = 4 [
         (gogoproto.moretags)   = "yaml:\"max_reserve_coin_amount\"",
-        (gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int",
+        (gogoproto.customtype) = "github.com/cheqd/cosmos-sdk/types.Int",
         (gogoproto.nullable)   = false,
         (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {
             example: "\"1000000000000\"",
@@ -91,7 +91,7 @@ message Params {
     repeated cosmos.base.v1beta1.Coin pool_creation_fee = 5 [
         (gogoproto.moretags)   = "yaml:\"pool_creation_fee\"",
         (gogoproto.nullable)   = false,
-        (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins",
+        (gogoproto.castrepeated) = "github.com/cheqd/cosmos-sdk/types.Coins",
         (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {
             example: "[{\"denom\": \"uatom\", \"amount\": \"100000000\"}]",
             format: "sdk.Coins"
@@ -101,7 +101,7 @@ message Params {
     // Swap fee rate for every executed swap.
     string swap_fee_rate = 6 [
         (gogoproto.moretags)   = "yaml:\"swap_fee_rate\"",
-        (gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec",
+        (gogoproto.customtype) = "github.com/cheqd/cosmos-sdk/types.Dec",
         (gogoproto.nullable)   = false,
         (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {
             example: "\"0.003\"",
@@ -111,7 +111,7 @@ message Params {
     // Reserve coin withdrawal with less proportion by withdrawFeeRate.
     string withdraw_fee_rate = 7 [
         (gogoproto.moretags)   = "yaml:\"withdraw_fee_rate\"",
-        (gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec",
+        (gogoproto.customtype) = "github.com/cheqd/cosmos-sdk/types.Dec",
         (gogoproto.nullable)   = false,
         (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {
             example: "\"0.003\"",
@@ -121,7 +121,7 @@ message Params {
     // Maximum ratio of reserve coins that can be ordered at a swap order.
     string max_order_amount_ratio = 8 [
         (gogoproto.moretags)   = "yaml:\"max_order_amount_ratio\"",
-        (gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec",
+        (gogoproto.customtype) = "github.com/cheqd/cosmos-sdk/types.Dec",
         (gogoproto.nullable)   = false,
         (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {
             example: "\"0.003\"",
@@ -209,7 +209,7 @@ message PoolMetadata {
     repeated cosmos.base.v1beta1.Coin reserve_coins = 3 [
         (gogoproto.moretags)   = "yaml:\"reserve_coins\"",
         (gogoproto.nullable)   = false,
-        (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins",
+        (gogoproto.castrepeated) = "github.com/cheqd/cosmos-sdk/types.Coins",
         (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {
             example: "[{\"denom\": \"denomX\", \"amount\": \"1000000\"}, {\"denom\": \"denomY\", \"amount\": \"2000000\"}]",
             format: "sdk.Coins"

@@ -5,8 +5,8 @@ import (
 	"math/rand"
 	"testing"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	distrtypes "github.com/cosmos/cosmos-sdk/x/distribution/types"
+	sdk "github.com/cheqd/cosmos-sdk/types"
+	distrtypes "github.com/cheqd/cosmos-sdk/x/distribution/types"
 	"github.com/stretchr/testify/require"
 
 	"github.com/gravity-devs/liquidity/app"

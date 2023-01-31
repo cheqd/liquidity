@@ -3,8 +3,8 @@ package liquidity
 import (
 	"time"
 
-	"github.com/cosmos/cosmos-sdk/telemetry"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/cheqd/cosmos-sdk/telemetry"
+	sdk "github.com/cheqd/cosmos-sdk/types"
 
 	"github.com/gravity-devs/liquidity/x/liquidity/keeper"
 	"github.com/gravity-devs/liquidity/x/liquidity/types"

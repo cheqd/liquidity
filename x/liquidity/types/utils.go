@@ -6,8 +6,8 @@ import (
 	"sort"
 	"strings"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/address"
+	sdk "github.com/cheqd/cosmos-sdk/types"
+	"github.com/cheqd/cosmos-sdk/types/address"
 	"github.com/tendermint/tendermint/crypto"
 )
 

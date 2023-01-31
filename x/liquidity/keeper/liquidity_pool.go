@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strconv"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
+	sdk "github.com/cheqd/cosmos-sdk/types"
+	sdkerrors "github.com/cheqd/cosmos-sdk/types/errors"
+	banktypes "github.com/cheqd/cosmos-sdk/x/bank/types"
 
 	"github.com/gravity-devs/liquidity/x/liquidity/types"
 )

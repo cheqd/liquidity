@@ -4,14 +4,14 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/cosmos/cosmos-sdk/simapp"
+	"github.com/cheqd/cosmos-sdk/simapp"
 	gogotypes "github.com/gogo/protobuf/types"
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/testutil"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/cheqd/cosmos-sdk/testutil"
+	"github.com/cheqd/cosmos-sdk/testutil/testdata"
+	sdk "github.com/cheqd/cosmos-sdk/types"
 
 	v042liquidity "github.com/gravity-devs/liquidity/x/liquidity/legacy/v042"
 	v043liquidity "github.com/gravity-devs/liquidity/x/liquidity/legacy/v043"

@@ -1,7 +1,7 @@
 package liquidity
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/cheqd/cosmos-sdk/types"
 
 	"github.com/gravity-devs/liquidity/x/liquidity/keeper"
 	"github.com/gravity-devs/liquidity/x/liquidity/types"

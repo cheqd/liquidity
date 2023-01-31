@@ -5,8 +5,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/cheqd/cosmos-sdk/codec"
+	sdk "github.com/cheqd/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 	abci "github.com/tendermint/tendermint/abci/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"

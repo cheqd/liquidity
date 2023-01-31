@@ -1,7 +1,7 @@
 package keeper
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/cheqd/cosmos-sdk/types"
 
 	v043 "github.com/gravity-devs/liquidity/x/liquidity/legacy/v043"
 )

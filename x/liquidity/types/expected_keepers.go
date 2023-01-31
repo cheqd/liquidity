@@ -1,9 +1,9 @@
 package types
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
+	sdk "github.com/cheqd/cosmos-sdk/types"
+	authtypes "github.com/cheqd/cosmos-sdk/x/auth/types"
+	banktypes "github.com/cheqd/cosmos-sdk/x/bank/types"
 )
 
 // BankKeeper defines the expected bank send keeper

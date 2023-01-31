@@ -1,7 +1,7 @@
 package v043
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/cheqd/cosmos-sdk/types"
 
 	v042liquidity "github.com/gravity-devs/liquidity/x/liquidity/legacy/v042"
 )

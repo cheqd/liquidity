@@ -6,8 +6,8 @@ package types
 import (
 	context "context"
 	fmt "fmt"
-	github_com_cosmos_cosmos_sdk_types "github.com/cosmos/cosmos-sdk/types"
-	types "github.com/cosmos/cosmos-sdk/types"
+	github_com_cosmos_cosmos_sdk_types "github.com/cheqd/cosmos-sdk/types"
+	types "github.com/cheqd/cosmos-sdk/types"
 	_ "github.com/gogo/protobuf/gogoproto"
 	grpc1 "github.com/gogo/protobuf/grpc"
 	proto "github.com/gogo/protobuf/proto"
@@ -39,7 +39,7 @@ type MsgCreatePool struct {
 	// id of the target pool type, must match the value in the pool. Only pool-type-id 1 is supported.
 	PoolTypeId uint32 `protobuf:"varint,2,opt,name=pool_type_id,json=poolTypeId,proto3" json:"pool_type_id,omitempty" yaml:"pool_type_id"`
 	// reserve coin pair of the pool to deposit.
-	DepositCoins github_com_cosmos_cosmos_sdk_types.Coins `protobuf:"bytes,4,rep,name=deposit_coins,json=depositCoins,proto3,castrepeated=github.com/cosmos/cosmos-sdk/types.Coins" json:"deposit_coins" yaml:"deposit_coins"`
+	DepositCoins github_com_cosmos_cosmos_sdk_types.Coins `protobuf:"bytes,4,rep,name=deposit_coins,json=depositCoins,proto3,castrepeated=github.com/cheqd/cosmos-sdk/types.Coins" json:"deposit_coins" yaml:"deposit_coins"`
 }
 
 func (m *MsgCreatePool) Reset()         { *m = MsgCreatePool{} }
@@ -125,7 +125,7 @@ type MsgDepositWithinBatch struct {
 	// id of the target pool
 	PoolId uint64 `protobuf:"varint,2,opt,name=pool_id,json=poolId,proto3" json:"pool_id" yaml:"pool_id"`
 	// reserve coin pair of the pool to deposit
-	DepositCoins github_com_cosmos_cosmos_sdk_types.Coins `protobuf:"bytes,3,rep,name=deposit_coins,json=depositCoins,proto3,castrepeated=github.com/cosmos/cosmos-sdk/types.Coins" json:"deposit_coins" yaml:"deposit_coins"`
+	DepositCoins github_com_cosmos_cosmos_sdk_types.Coins `protobuf:"bytes,3,rep,name=deposit_coins,json=depositCoins,proto3,castrepeated=github.com/cheqd/cosmos-sdk/types.Coins" json:"deposit_coins" yaml:"deposit_coins"`
 }
 
 func (m *MsgDepositWithinBatch) Reset()         { *m = MsgDepositWithinBatch{} }
@@ -310,7 +310,7 @@ type MsgSwapWithinBatch struct {
 	// limit order price for the order, the price is the exchange ratio of X/Y
 	// where X is the amount of the first coin and Y is the amount
 	// of the second coin when their denoms are sorted alphabetically.
-	OrderPrice github_com_cosmos_cosmos_sdk_types.Dec `protobuf:"bytes,7,opt,name=order_price,json=orderPrice,proto3,customtype=github.com/cosmos/cosmos-sdk/types.Dec" json:"order_price" yaml:"order_price"`
+	OrderPrice github_com_cosmos_cosmos_sdk_types.Dec `protobuf:"bytes,7,opt,name=order_price,json=orderPrice,proto3,customtype=github.com/cheqd/cosmos-sdk/types.Dec" json:"order_price" yaml:"order_price"`
 }
 
 func (m *MsgSwapWithinBatch) Reset()         { *m = MsgSwapWithinBatch{} }

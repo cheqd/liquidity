@@ -6,11 +6,11 @@ import (
 	"encoding/json"
 	"log"
 
-	servertypes "github.com/cosmos/cosmos-sdk/server/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	slashingtypes "github.com/cosmos/cosmos-sdk/x/slashing/types"
-	"github.com/cosmos/cosmos-sdk/x/staking"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	servertypes "github.com/cheqd/cosmos-sdk/server/types"
+	sdk "github.com/cheqd/cosmos-sdk/types"
+	slashingtypes "github.com/cheqd/cosmos-sdk/x/slashing/types"
+	"github.com/cheqd/cosmos-sdk/x/staking"
+	stakingtypes "github.com/cheqd/cosmos-sdk/x/staking/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 )
 

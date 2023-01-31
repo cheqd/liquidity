@@ -4,8 +4,8 @@ import (
 	"reflect"
 	"testing"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	paramstypes "github.com/cosmos/cosmos-sdk/x/params/types"
+	sdk "github.com/cheqd/cosmos-sdk/types"
+	paramstypes "github.com/cheqd/cosmos-sdk/x/params/types"
 	"github.com/stretchr/testify/require"
 
 	"github.com/gravity-devs/liquidity/app"

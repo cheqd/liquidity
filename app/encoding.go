@@ -3,7 +3,7 @@ package app
 // DONTCOVER
 
 import (
-	"github.com/cosmos/cosmos-sdk/std"
+	"github.com/cheqd/cosmos-sdk/std"
 
 	"github.com/gravity-devs/liquidity/app/params"
 )

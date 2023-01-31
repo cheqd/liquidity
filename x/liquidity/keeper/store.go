@@ -1,7 +1,7 @@
 package keeper
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/cheqd/cosmos-sdk/types"
 	gogotypes "github.com/gogo/protobuf/types"
 
 	"github.com/gravity-devs/liquidity/x/liquidity/types"

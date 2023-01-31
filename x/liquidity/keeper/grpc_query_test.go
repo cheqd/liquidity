@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/cosmos/cosmos-sdk/types/query"
+	"github.com/cheqd/cosmos-sdk/types/query"
 
 	"github.com/gravity-devs/liquidity/x/liquidity/types"
 )

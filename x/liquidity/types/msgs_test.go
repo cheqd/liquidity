@@ -3,7 +3,7 @@ package types_test
 import (
 	"testing"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/cheqd/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 	"github.com/tendermint/tendermint/crypto"
 

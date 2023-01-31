@@ -8,9 +8,9 @@ import (
 	"math/rand"
 	"strings"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	"github.com/cosmos/cosmos-sdk/types/simulation"
+	sdk "github.com/cheqd/cosmos-sdk/types"
+	"github.com/cheqd/cosmos-sdk/types/module"
+	"github.com/cheqd/cosmos-sdk/types/simulation"
 
 	"github.com/gravity-devs/liquidity/x/liquidity/types"
 )
